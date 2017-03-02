@@ -22,7 +22,7 @@ body {
     background: #ededed;
     font-family: "MyriadProRegular", Arial, sans-serif;
 
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1;
 
     margin-top: 2%;
@@ -69,20 +69,14 @@ body {
     height: auto;
 }
 
-section {
-    margin-top: 5%;
-}
-
-section:first-child {
-    margin-top: 0;
-}
-
 /* promo */
 
 .promo {
     background: #474747;
 
     font-family: "MyriadProCondRegular", Arial, sans-serif;
+
+    padding: 2.4% 0;
 }
 
 .promo .container {
@@ -90,8 +84,9 @@ section:first-child {
 }
 
 .main-title {
-    margin-left: 1%;
-    width: 54%;
+    width: 95%;
+
+    margin: 0 auto;
 
     font-size: 3em;
     line-height: 1.333333;
@@ -101,13 +96,9 @@ section:first-child {
 .data-centers {
     background: #2f549b;
 
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-
-    width: 39%;
-    padding: 1% 3%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2.5%;
 
     align-items: center;
 }
@@ -139,6 +130,10 @@ section:first-child {
 
 /* features */
 
+.features {
+    margin-top: 5.75%;
+}
+
 .feature-card {
     flex: 0 0 98%;
     margin: 0 1% 2%;
@@ -157,6 +152,7 @@ section:first-child {
 .card-title {
     font-size: 3.6em;
     line-height: 1.111111;
+    margin-top: 7%;
 }
 
 .card-title, .card-subtitle {
@@ -165,18 +161,19 @@ section:first-child {
 
 .card-subtitle, .card-content, .link-more {
     font-size: 1.4em;
-    padding: 0 5%;
+    padding: 0 10%;
 }
 
 .card-subtitle {
     line-height: 1.285714;
+    margin-top: 2.5%;
 }
 
 .card-subtitle::after {
     content: '';
     display: block;
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 9% auto 0;
     border-bottom: solid 1px #e5e5e5;
 }
 
@@ -186,10 +183,13 @@ section:first-child {
 
 .card-content {
     color: #5e5e5e;
+    margin-top: 8%;
 }
 
 .link-more {
     color: #c6c6c6;
+    display: inline-block;
+    margin-top: 14.75%;
 }
 
 .feature-card:hover {
@@ -212,9 +212,13 @@ section:first-child {
 
 /* tools */
 
+.tools {
+    margin-top: 8.4%;
+}
+
 .tools .container {
     position: relative;
-    padding: 2% 0;
+    padding: 5% 0 3.4%;
     background: #c6c6c6;
 }
 
@@ -233,9 +237,10 @@ section:first-child {
     text-align: center;
 
     position: absolute;
-    top: 0;
     left: 50%;
-    transform: translate(-50%, -15px);
+    transform: translate(-50%, 0);
+    bottom: calc(100% - 12px);
+    padding: 1.5% 0;
 }
 
 .tools-title::after,
@@ -249,13 +254,13 @@ section:first-child {
 }
 
 .tools-title::before {
-    border-width: 0 15px 15px 0;
+    border-width: 0 14px 12px 0;
     border-color: transparent #1f3560 transparent transparent;
     right: 100%;
 }
 
 .tools-title::after {
-    border-width: 15px 15px 0 0;
+    border-width: 12px 14px 0 0;
     border-color: #1f3560 transparent transparent transparent;
     left: 100%;
 }
@@ -266,6 +271,8 @@ section:first-child {
     text-align: center;
 
     color: #5e5e5e;
+    border-radius: 3px;
+    padding: 0 0 1.6%;
 }
 
 .tool:nth-last-child(-n + 2) {
@@ -274,7 +281,6 @@ section:first-child {
 
 .tool:hover {
     background: #2f549b;
-    border-radius: 5px;
 
     color: #ffffff
 }
@@ -323,10 +329,20 @@ section:first-child {
     font-size: 1.4em;
     line-height: 1.142857;
 
-    padding: 0 5%;
+    padding: 0 8%;
+
+    margin-top: 6%;
 }
 
 @media screen and (min-width: 480px) {
+    .feature-card {
+        flex-basis: 48%;
+    }
+
+    .feature-card:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+
     .tools-title {
         width: 55%;
     }
@@ -338,28 +354,67 @@ section:first-child {
     .tool:nth-last-child(3) {
         margin-bottom: 0;
     }
+}
 
-    .feature-card {
-        flex-basis: 48%;
+@media screen and (min-width: 640px) {
+    body {
+        font-size: 9px;
     }
 
-    .feature-card:nth-last-child(2) {
-        margin-bottom: 0;
+    .main-title {
+        width: 48%;
+
+        margin: 0 0 0 1%;
+    }
+
+    .data-centers {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 45%;
+    }
+
+    .tools {
+        margin-top: 6.4%;
+    }
+
+    .tools .container {
+        padding: 3% 0 1.4%;
     }
 }
 
 @media screen and (min-width: 960px) {
-    .tools-title {
-        width: 33%;
+    body {
+        font-size: 10px;
     }
 
-    .tool {
-        flex-basis: 14.583333%;
-        margin-bottom: 0;
+    .data-centers {
+        padding: 3.75% 4.8% 3.75% 5.5%;
+        width: 34.7%;
     }
 
     .feature-card {
         flex-basis: 23%;
+        margin-bottom: 0;
+    }
+
+    .tools-title {
+        width: 26%;
+
+        bottom: calc(100% - 24px);
+    }
+
+    .tools-title::before {
+        border-width: 0 28px 24px 0;
+    }
+
+    .tools-title::after {
+        border-width: 24px 28px 0 0;
+    }
+
+    .tool {
+        flex-basis: 14.583333%;
         margin-bottom: 0;
     }
 }
