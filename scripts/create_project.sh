@@ -36,4 +36,10 @@ else
     zip -r \${ARCHIVE_NAME} project
 fi
 EOF
+chmod +x ${PROJECT_NAME}/zip.sh
 echo "Done"
+
+cd ${PROJECT_NAME}/project
+git init
+git add -A
+git commit -m "Initial commit"
