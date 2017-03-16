@@ -82,8 +82,6 @@ body {
 .promo {
     font-family: 'MyriadProCondRegular', Arial, sans-serif;
 
-    padding: 2.4% 0;
-
     background: #474747;
     -webkit-box-shadow: 0 2px 0 0 #fff;
     -moz-box-shadow: 0 2px 0 0 #fff;
@@ -92,8 +90,10 @@ body {
     -o-box-shadow: 0 2px 0 0 #fff;
 }
 
-.promo .container {
+.promo .section-content {
     position: relative;
+
+    padding: 3.3% 0 2.9%;
 }
 
 .main-title {
@@ -149,8 +149,8 @@ body {
 
 /* features */
 
-.features {
-    margin-top: 5.75%;
+.features .section-content {
+    margin-top: 7.5%;
 }
 
 .feature-card {
@@ -253,12 +253,10 @@ body {
 
 /* tools */
 
-.tools {
-    margin-top: 8.4%;
-}
-
-.tools .container {
+.tools .section-content {
     position: relative;
+
+    margin-top: 8.4%;
 
     padding: 5% 0 3.4%;
 
@@ -274,6 +272,7 @@ body {
 
 .tools-title {
     font-size: 3em;
+    letter-spacing: -1px;
 
     position: absolute;
     bottom: calc(100% - 12px);
@@ -381,7 +380,7 @@ body {
 
     display: block;
 
-    margin-top: 6%;
+    margin-top: 10%;
     padding: 0 8%;
 
     text-decoration: none;
@@ -429,12 +428,9 @@ body {
         transform: translate(0, -50%);
     }
 
-    .tools {
-        margin-top: 6.4%;
-    }
-
-    .tools .container {
-        padding: 3% 0 1.4%;
+    .tools .section-content {
+        margin-top: 8.3%;
+        padding: 3.4% 0 1.8%;
     }
 }
 
