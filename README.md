@@ -1,3 +1,2 @@
-## Домашняя работа №33
-Одна из домашних работ для курса вёрстки.
-https://someq.github.io/html-course-hw-33/
+## Домашняя работа №33 для курса вёрстки
+https://someq.github.io/html_group_8_homework_33_farid_khalikov/
